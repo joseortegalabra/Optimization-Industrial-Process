@@ -15,6 +15,10 @@ gurobi.lic
 **/.pkl
 *.pkl
 
+# file with sensible information
+.xlsx
+**/.xlsx
+*.xlsx
 
 # files images
 .png
