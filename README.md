@@ -18,3 +18,6 @@ The data and some names are privated so it not uploaded to this repo
 - **0_data**: folder where the datalake data (almost raw data) is downloaded from a datalake in bigquert (GCP)
 
 - **basic_process_data**: folder where the data getting form the datalake is transformed in a version of data that a data scientist can manipulate (pivot data, delete hidden duplicates, etc)
+
+
+- TERMINAR - .... -
