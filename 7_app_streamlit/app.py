@@ -408,18 +408,18 @@ if __name__ == "__main__":
         ######################## decision variables that are TARGETS in Machiine Learning Models ########################
 
         # model d0eop_microkappa
-        microkappa_d1 = gppd.add_vars(m, index_bleaching, name = "especifico_dioxido_d0", 
+        microkappa_d1 = gppd.add_vars(m, index_bleaching, name = "microkappa_d1", 
                                             lb = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'microkappa_d1']['MIN_VALUE'].values[0], 
                                             ub = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'microkappa_d1']['MAX_VALUE'].values[0]
                                             )
 
         # model d1_brillo
-        brillo_entrada_p = gppd.add_vars(m, index_bleaching, name = "especifico_dioxido_d0", 
+        brillo_entrada_p = gppd.add_vars(m, index_bleaching, name = "brillo_entrada_p", 
                                             lb = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'brillo_entrada_p']['MIN_VALUE'].values[0], 
                                             ub = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'brillo_entrada_p']['MAX_VALUE'].values[0]
                                             )
         # model p_blancura
-        blancura_salida_p = gppd.add_vars(m, index_bleaching, name = "especifico_dioxido_d0", 
+        blancura_salida_p = gppd.add_vars(m, index_bleaching, name = "blancura_salida_p", 
                                             lb = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'blancura_salida_p']['MIN_VALUE'].values[0], 
                                             ub = bounds_decison_var_target[bounds_decison_var_target['TAG_DESCRIPTION'] == 'blancura_salida_p']['MAX_VALUE'].values[0]
                                             )
@@ -430,54 +430,54 @@ if __name__ == "__main__":
 
         # model d0eop_microkappa
         diff_especifico_dioxido_d0 = gppd.add_vars(m, index_bleaching, name = "diff_especifico_dioxido_d0", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_oxigeno_eop = gppd.add_vars(m, index_bleaching, name = "diff_especifico_oxigeno_eop", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_peroxido_eop = gppd.add_vars(m, index_bleaching, name = "diff_especifico_peroxido_eop", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_soda_eop = gppd.add_vars(m, index_bleaching, name = "diff_especifico_soda_eop", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
 
 
         # model d1_brillo
         diff_especifico_dioxido_d1 = gppd.add_vars(m, index_bleaching, name = "diff_especifico_dioxido_d1", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_acido_d1 = gppd.add_vars(m, index_bleaching, name = "diff_especifico_acido_d1", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
 
 
         # model p_blancura
         diff_especifico_soda_p = gppd.add_vars(m, index_bleaching, name = "diff_especifico_soda_p", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_peroxido_p = gppd.add_vars(m, index_bleaching, name = "diff_especifico_peroxido_p", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
         diff_especifico_acido_p = gppd.add_vars(m, index_bleaching, name = "diff_especifico_acido_p", 
-                                            #lb = -gp.GRB.INFINITY,
-                                            #ub = gp.GRB.INFINITY
+                                            lb = -gp.GRB.INFINITY,
+                                            ub = gp.GRB.INFINITY
                                             )
 
 
