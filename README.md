@@ -19,7 +19,11 @@ The list of models trained and used in optimization models are divided into:
 
 
 ### Consideration
-The data and some names are privated so it not uploaded to this repo
+1. The data and some names are privated so it not uploaded to this repo
+2. The optimization codes are parametrized to read input parameters but the codes are not optimal and it needs to be written in a better way
+3. These codes can work using gurobi free licence
+4. In the next repo I use gurobi licence training best models and included updates and improves into machine learning modesl, optimization engine and streamlit app. Link repo: https://github.com/joseortegalabra/Optimization-Industrial-Process-Advanced
+
 
 ### Folder
 - **0_templates**: folder that contains a templates. Template how to load a licence gurobi using differents ways and a template notebook with the first lines of codes that can be used in all the folders (see that the folder artifacts, config, etc there are located in the root path and the notebooks are in folders) 
